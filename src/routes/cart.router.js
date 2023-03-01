@@ -3,7 +3,7 @@ import cartManager from "./cart.manager.js";
 import { Router } from "express";
 const productos = new productManager("productos.json");
 const carritos = new cartManager("carts.json");
-import productManager from "../product.manager.js";
+import productManager from "./product.manager.js";
 
 
 const router = Router();

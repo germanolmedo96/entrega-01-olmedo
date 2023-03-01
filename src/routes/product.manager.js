@@ -78,7 +78,7 @@ class ProductManager {
         try {
             const updateProducts = products.map((product) => {
                 if (product.id === id) {
-                    return { ...product, id, newProduct };
+                    return { ...product, ...newProduct };
                 }
                 else {
                     return { ...product }
